@@ -1,0 +1,127 @@
+/* === HEADER base (respetando colores) === */
+.header_container{
+  padding: 24px 120px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: space-between;
+  font-size: 16px;
+  color: white;
+  align-items: center;
+}
+
+.header_logo_smv{ width:110px; height:56px; }
+
+.header_contenedor_opciones{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:32px;
+}
+
+.opcion_navegacion{
+  display:inline-flex;
+  flex-direction:row;
+  gap:8px;
+  padding:4px 12px;
+  align-items:center;
+  text-decoration:none;
+  color:inherit;
+  border-radius:6px;
+}
+
+.header_boton{
+  padding:8px 16px;
+  border-radius:4px;
+  border:1px solid white;
+  text-decoration:none;
+  color:inherit;
+  display:inline-block;
+  font-weight:600;
+}
+
+/* Accesibilidad */
+@media (hover:hover){
+  .opcion_navegacion:hover{ background:rgba(255,255,255,.08); }
+  .header_boton:hover{ background:rgba(255,255,255,.12); }
+}
+.opcion_navegacion:focus-visible,
+.header_boton:focus-visible{
+  outline:2px solid #4da3ff;
+  outline-offset:2px;
+  border-radius:6px;
+}
+
+/* === CTA visibility (evitar doble "Contáctanos") === */
+.header_boton--desktop{ display:inline-block; }
+.header_boton--mobile{ display:none; }
+
+/* === Hamburguesa === */
+.header_toggle{
+  display:none;
+  background:transparent;
+  border:0;
+  color:inherit;
+  padding:6px;
+  line-height:0;
+  border-radius:6px;
+}
+.header_toggle:focus-visible{ outline:2px solid #4da3ff; outline-offset:2px; }
+
+/* Fondo sólido para el panel colapsable (tablet/móvil) */
+@media (max-width: 1024px){
+  .header_container{ position: relative; }
+
+  .header_container .header_contenedor_opciones{
+    background: #2F3031;                 /* <- sólido, NO inherit */
+    color: #fff;                          /* por si acaso */
+    border-top: 1px solid rgba(255,255,255,.12);
+    box-shadow: 0 10px 24px rgba(0,0,0,.22);
+    /* resto se mantiene igual: position:absolute; top:100%; left:0; right:0; ... */
+  }
+
+  /* opcional: bloquear scroll cuando el menú está abierto */
+  body.menu-open { overflow: hidden; }
+}
+
+/* Mobile (≤768px): sigue igual la negrita */
+@media (max-width: 768px){
+  .header_container .header_contenedor_opciones .opcion_navegacion,
+  .header_container .header_boton{
+    font-weight: 700;
+  }
+}
+
+
+/* === Tablet colapsado (≤1024px) === */
+@media (max-width:1024px){
+  .header_container{ padding:18px 24px; position:relative; }
+  .header_toggle{ display:inline-flex; }
+
+  .header_contenedor_opciones{
+    position:absolute; top:100%; left:0; right:0;
+    background:inherit; color:inherit;
+    flex-direction:column; align-items:stretch;
+    gap:6px; padding:12px;
+    transform-origin:top center;
+    transform:scaleY(0); opacity:0; pointer-events:none;
+    transition:transform .18s ease, opacity .18s ease;
+    box-shadow:0 8px 24px rgba(0,0,0,.18);
+    z-index:9999;
+  }
+  body.menu-open .header_contenedor_opciones{ transform:scaleY(1); opacity:1; pointer-events:auto; }
+
+  .opcion_navegacion{ padding:12px; border-radius:8px; font-weight:600; }
+
+  /* CTA solo dentro del panel en tablet/móvil */
+  .header_boton--desktop{ display:none; }
+  .header_boton--mobile{ display:inline-block; width:100%; text-align:center; }
+}
+
+/* === Mobile (≤768px): negrita pedida === */
+@media (max-width:768px){
+  .header_container{ padding:16px; }
+  .opcion_navegacion, .header_boton{ font-weight:700; } /* negrita solo mobile */
+}
+

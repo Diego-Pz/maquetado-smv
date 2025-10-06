@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="../css/index/index.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/index/seccion_1.css">
+    <link rel="stylesheet" href="../css/index/seccion_2.css">
+    <link rel="stylesheet" href="../css/index/seccion_3.css">
+    <link rel="stylesheet" href="../css/index/seccion_4.css">
+    <link rel="stylesheet" href="../css/index/seccion_5.css">
+    <link rel="stylesheet" href="../css/index/seccion_6.css">
+    <link rel="stylesheet" href="../css/index/seccion_7.css">
+    <link rel="stylesheet" href="../css/index/seccion_8.css">
+    <link rel="stylesheet" href="../css/index/seccion_9.css">
+    <link rel="stylesheet" href="../css/shared/header.css">
+    <link rel="stylesheet" href="../css/shared/footer.css">
+    <title>Portal de Educación Financiera</title>
+    <!--<script src="/entregable/js/index.js"></script>-->
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  </head>
+  <body>
+    <div class="header__container">
+      <header id="header-html">
+        <div class="header_container" role="banner">
+  <a href="/" class="header_logo_link" aria-label="Ir al inicio">
+    <img class="header_logo_smv" src="../assets/webp/smv_logo_blanco.webp" alt="Sede SMV">
+  </a>
+
+  <!-- Botón hamburguesa (visible en tablet/móvil) -->
+  <button class="header_toggle" aria-controls="site-menu" aria-expanded="false" aria-label="Abrir menú">
+    <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true">
+      <path fill="currentColor" d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+    </svg>
+  </button>
+
+  <nav id="site-menu" class="header_contenedor_opciones" role="navigation">
+    <a href="" class="opcion_navegacion"><div>SMV</div></a>
+    <a href="" class="opcion_navegacion"><div>Perfil de Riesgo</div></a>
+    <a href="" class="opcion_navegacion"><div>Estadísticas</div></a>
+    <a href="" class="opcion_navegacion"><div>Cursos</div></a>
+    <a href="" class="opcion_navegacion"><div>Canales de atención</div></a>
+
+    <!-- CTA SOLO para tablet/móvil -->
+    <a href="https://www.smv.gob.pe/ServicioContactenos/Frm_Contactenos?data=C5C9D3BA83FF2D3C36D857787308B49DE82F7BBF62"
+       target="_blank" class="header_boton header_boton--mobile"><div>Contáctanos</div></a>
+  </nav>
+
+  <!-- CTA SOLO para escritorio -->
+  <a href="https://www.smv.gob.pe/ServicioContactenos/Frm_Contactenos?data=C5C9D3BA83FF2D3C36D857787308B49DE82F7BBF62"
+     target="_blank" class="header_boton header_boton--desktop"><div>Contáctanos</div></a>
+</div>
+
+      </header>
+      <div id="seccion_1">
+        <!-- SECCIÓN: Hero SMV -->
+<section class="hero-smv">
+  <div class="container">
+    <!-- Título + subtítulo -->
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h1 class="hero-smv__title">
+          Bienvenidos al portal de Educación<br class="hidden-xs">
+          Financiera de la SMV
+        </h1>
+        <p class="hero-smv__subtitle">
+          Propiciamos el conocimiento y cultura sobre el mercado de valores como alternativa de
+          inversión y fuente de financiamiento empresarial.
+        </p>
+      </div>
+    </div>
+
+    <!-- Media (imagen con botón play centrado) -->
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="hero-smv__media panel panel-default">
+          <div class="panel-body hero-smv__media-body">
+            <img
+              class="img-responsive hero-smv__media-img"
+              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop"
+              alt="Reunión de negocios"
+            />
+            <button type="button" class="btn btn-success btn-lg hero-smv__play" aria-label="Reproducir video">
+              <span class="glyphicon glyphicon-play"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjetas -->
+    <div class="row hero-smv__cards">
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail hero-smv__card">
+          <div class="caption text-center">
+            <span class="hero-smv__icon glyphicon glyphicon-stats" aria-hidden="true"></span>
+            <p class="hero-smv__card-text">Mercado de valores</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail hero-smv__card">
+          <div class="caption text-center">
+            <span class="hero-smv__icon glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+            <p class="hero-smv__card-text">Sistema de fondos colectivos</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="thumbnail hero-smv__card">
+          <div class="caption text-center">
+            <span class="hero-smv__icon glyphicon glyphicon-hand-up" aria-hidden="true"></span>
+            <p class="hero-smv__card-text">Financiamiento participativo financiero</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: Hero SMV -->
+
+      </div>
+    </div>
+    <div class="contenedor_principal">
+      <div id="seccion_2">
+        <!-- SECCIÓN: Biblioteca de conocimientos (Bootstrap 3) -->
+<section class="kb-lib">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="kb-title">Biblioteca de conocimientos</h2>
+      </div>
+    </div>
+
+    <!-- Usa el grid de Bootstrap 3 -->
+    <div class="row kb-grid">
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-console" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Juegos</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-facetime-video" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Vídeos</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Cómics</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-certificate" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Folletos</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Infografías</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-record" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Guías</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-headphones" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Podcast</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Glosario</span>
+        </a>
+      </div>
+
+      <div class="col-xs-6 col-sm-4 col-md-3">
+        <a href="#" class="kb-card">
+          <span class="kb-icon">
+            <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span>
+          </span>
+          <span class="kb-text">Feria</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <div id="seccion_3">
+        <!-- SECCIÓN: Estadísticas y Publicaciones -->
+<section class="sp-lib">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="sp-title">Estadísticas y Publicaciones</h2>
+      </div>
+    </div>
+
+    <div class="row sp-grid">
+
+      <!-- Card 1 -->
+      <div class="col-xs-12 col-sm-6">
+        <a href="#" class="sp-card">
+          <!-- Diamante con icono -->
+          <span class="sp-badge">
+            <span class="sp-badge-inner">
+              <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+            </span>
+          </span>
+
+          <div class="sp-body text-center">
+            <h3 class="sp-card-title">Reporte Mensual</h3>
+            <div class="sp-divider"></div>
+            <p class="sp-desc">
+              Resumen de los principales datos y movimientos del mes.
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-xs-12 col-sm-6">
+        <a href="#" class="sp-card">
+          <!-- Diamante con icono -->
+          <span class="sp-badge">
+            <span class="sp-badge-inner">
+              <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+            </span>
+          </span>
+
+          <div class="sp-body text-center">
+            <h3 class="sp-card-title">Anuario Estadístico</h3>
+            <div class="sp-divider"></div>
+            <p class="sp-desc">
+              Estadísticas anuales consolidadas del mercado de valores.
+            </p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: Estadísticas y Publicaciones -->
+
+      </div>
+      <div id="seccion_4">
+        <!-- SECCIÓN: Actividades Educativas -->
+<section class="ea-section">
+    <div class="container">
+        <!-- Título y subtítulo -->
+        <div class="row text-center">
+            <div class="col-xs-12">
+                <h2 class="ea-title">Actividades Educativas</h2>
+                <p class="ea-subtitle">
+                    Descubre nuestras actividades educativas diseñadas para diferentes perfiles.
+                </p>
+            </div>
+        </div>
+
+        <!-- Grid 2x2 -->
+        <div class="row ea-grid">
+            <!-- 1. Escolares -->
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="ea-card">
+                    <img class="img-responsive ea-bg"
+                        src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1600&auto=format&fit=crop"
+                        alt="Actividad para escolares">
+                    <span class="ea-tag ea-tag--blue">Escolares</span>
+
+                    <div class="ea-footer">
+                        <span class="ea-evt hidden-xs">Eventos realizados</span>
+                        <button class="btn btn-link ea-more">Ver más <span class="glyphicon glyphicon-arrow-right"
+                                aria-hidden="true"></span></button>
+                        <span class="ea-evt visible-xs-inline">Eventos realizados</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 2. Universitarios -->
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="ea-card">
+                    <img class="img-responsive ea-bg"
+                        src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1600&auto=format&fit=crop"
+                        alt="Actividad para universitarios">
+                    <span class="ea-tag ea-tag--teal">Universitarios</span>
+
+                    <div class="ea-footer">
+                        <span class="ea-evt hidden-xs">Eventos realizados</span>
+                        <button class="btn btn-link ea-more">Ver más <span
+                                class="glyphicon glyphicon-arrow-right"></span></button>
+                        <span class="ea-evt visible-xs-inline">Eventos realizados</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 3. Empresarios -->
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="ea-card">
+                    <img class="img-responsive ea-bg"
+                        src="https://images.unsplash.com/photo-1551281044-8d8d0d8c9b47?q=80&w=1600&auto=format&fit=crop"
+                        alt="Actividad para empresarios">
+                    <span class="ea-tag ea-tag--green">Empresarios</span>
+
+                    <div class="ea-footer">
+                        <span class="ea-evt hidden-xs">Eventos realizados</span>
+                        <button class="btn btn-link ea-more">Ver más <span
+                                class="glyphicon glyphicon-arrow-right"></span></button>
+                        <span class="ea-evt visible-xs-inline">Eventos realizados</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- 4. Público general -->
+            <div class="col-xs-12 col-sm-6">
+                <a href="#" class="ea-card">
+                    <img class="img-responsive ea-bg"
+                        src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop"
+                        alt="Actividad para público general">
+                    <span class="ea-tag ea-tag--mint">Público general</span>
+
+                    <div class="ea-footer">
+                        <span class="ea-evt hidden-xs">Eventos realizados</span>
+                        <button class="btn btn-link ea-more">Ver más <span
+                                class="glyphicon glyphicon-arrow-right"></span></button>
+                        <span class="ea-evt visible-xs-inline">Eventos realizados</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /SECCIÓN: Actividades Educativas -->
+      </div>
+      <div id="seccion_5">
+        <!-- SECCIÓN: Infórmate al instante -->
+<section class="ii-section">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="ii-title">Infórmate al instante</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+
+        <div class="ii-accordion" id="iiAccordion">
+          <!-- ITEM 1 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii1" role="button" aria-expanded="false" aria-controls="ii1">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">Principales participantes del mercado de valores</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii1" class="panel-collapse collapse">
+            <div class="ii-body">
+              Emisores, inversionistas, sociedades agentes de bolsa, entidades de liquidación y
+              la SMV como ente regulador, entre otros actores clave.
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii2" role="button" aria-expanded="false" aria-controls="ii2">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">¿Cómo operan los fondos mutuos?</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii2" class="panel-collapse collapse">
+            <div class="ii-body">
+              Reúnen aportes de muchos partícipes para invertirlos en carteras diversificadas administradas
+              por una sociedad administradora, con políticas y riesgos definidos.
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii3" role="button" aria-expanded="false" aria-controls="ii3">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">¿Cuál es la estructura del mercado de valores?</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii3" class="panel-collapse collapse">
+            <div class="ii-body">
+              Mercado primario (emisión) y secundario (negociación), infraestructuras de negociación,
+              compensación y liquidación, además de supervisión y autorregulación.
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii4" role="button" aria-expanded="false" aria-controls="ii4">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">Perfil del inversionista</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii4" class="panel-collapse collapse">
+            <div class="ii-body">
+              Se determina por objetivos, plazo, tolerancia al riesgo y situación financiera, y guía
+              la selección de productos adecuados.
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii5" role="button" aria-expanded="false" aria-controls="ii5">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">¿Qué es el MAV?</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii5" class="panel-collapse collapse">
+            <div class="ii-body">
+              El Mercado Alternativo de Valores (MAV) facilita el financiamiento de medianas y pequeñas
+              empresas con requisitos y costos adaptados.
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii6" role="button" aria-expanded="false" aria-controls="ii6">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">¿Cómo operan los fondos colectivos?</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii6" class="panel-collapse collapse">
+            <div class="ii-body">
+              Mecanismo asociativo en el que los aportes de los participantes se destinan periódicamente
+              a asignaciones para adquirir bienes o servicios.
+            </div>
+          </div>
+
+          <!-- ITEM 7 -->
+          <a class="ii-item" data-toggle="collapse" href="#ii7" role="button" aria-expanded="false" aria-controls="ii7">
+            <span class="ii-badge">?</span>
+            <span class="ii-text">Evalúa tu perfil de riesgo</span>
+            <span class="ii-toggle"><span class="glyphicon glyphicon-plus"></span></span>
+          </a>
+          <div id="ii7" class="panel-collapse collapse">
+            <div class="ii-body">
+              Responde un breve cuestionario y obtén una referencia de tu tolerancia al riesgo de inversión.
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: Infórmate al instante -->
+
+      </div>
+      <div id="seccion_6">
+        <!-- SECCIÓN: Hero Slider -->
+<section class="giw-hero">
+  <div id="giwCarousel" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="hover">
+    <div class="carousel-inner" role="listbox">
+
+      <!-- ===== Slide 1 ===== -->
+      <div class="item active">
+        <!-- Imagen de fondo -->
+        <img class="giw-bg img-responsive"
+             src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=1600&auto=format&fit=crop"
+             alt="Semana Mundial del Inversionista">
+
+        <!-- Capa de contenido -->
+        <div class="container giw-layer">
+          <!-- Overlay diagonal -->
+          <div class="giw-overlay"></div>
+
+          <!-- Contenido izquierdo -->
+          <div class="giw-content">
+            <!-- Badges / logos de aliados -->
+            <ul class="giw-badges list-inline">
+              <li><span class="giw-badge">SMV</span></li>
+              <li><span class="giw-badge">FMP</span></li>
+              <li><span class="giw-badge">BVL</span></li>
+              <li><span class="giw-badge">ASABPERÚ</span></li>
+            </ul>
+
+            <h2 class="giw-title">
+              Semana Mundial<br class="hidden-xs">
+              del Inversionista
+            </h2>
+
+            <p class="giw-desc">
+              La finalidad de la Semana Mundial del Inversionista es la
+              de crear conciencia sobre la importancia de la educación,
+              información y la protección a los inversionistas.
+            </p>
+
+            <a href="#" class="btn giw-cta btn-lg">
+              Infórmate <span class="glyphicon glyphicon-arrow-right"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== (Opcional) Duplica este bloque .item para más slides ===== -->
+      <!--
+      <div class="item">
+        <img class="giw-bg img-responsive" src="TU_IMAGEN_2.jpg" alt="">
+        <div class="container giw-layer">
+          <div class="giw-overlay"></div>
+          <div class="giw-content">
+            <ul class="giw-badges list-inline">
+              ...
+            </ul>
+            <h2 class="giw-title">Título del segundo slide</h2>
+            <p class="giw-desc">Texto del segundo slide.</p>
+            <a href="#" class="btn giw-cta btn-lg">Infórmate <span class="glyphicon glyphicon-arrow-right"></span></a>
+          </div>
+        </div>
+      </div>
+      -->
+
+    </div>
+
+    <!-- Controles -->
+    <a class="left carousel-control giw-control giw-control--left" href="#giwCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control giw-control giw-control--right" href="#giwCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</section>
+<!-- /SECCIÓN: Hero Slider -->
+
+      </div>
+      <div id="seccion_7">
+        <!-- SECCIÓN: PEMV -->
+<section class="pemv">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="pemv__title">
+          Programa de Especialización en Mercado de Valores (PEMV)
+        </h2>
+      </div>
+    </div>
+
+    <div class="row pemv__row">
+      <!-- Media (imagen + play) -->
+      <div class="col-xs-12 col-sm-6">
+        <div class="pemv__media">
+          <img
+            class="img-responsive"
+            src="https://images.unsplash.com/photo-1554224155-1696413565d3?q=80&w=1600&auto=format&fit=crop"
+            alt="Video del PEMV"
+          />
+          <button type="button" class="pemv__play" aria-label="Reproducir video">
+            <span class="glyphicon glyphicon-play"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Contenido -->
+      <div class="col-xs-12 col-sm-6">
+        <div class="pemv__content">
+          <p class="pemv__desc">
+            Formación intensiva que combina teoría y práctica sobre el mercado de valores,
+            regulación y gestión del riesgo, fortaleciendo las competencias de profesionales
+            y estudiantes en el ámbito financiero.
+          </p>
+
+          <p class="pemv__note">
+            <strong>Inscripciones para el PEMV:</strong>
+            Desde el 1 de septiembre hasta el 26 de octubre del 2025
+          </p>
+
+          <a href="#"
+             class="btn pemv__cta btn-lg">
+            Inscríbete ahora
+            <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: PEMV -->
+
+      </div>
+      <div id="seccion_8">
+        <!-- SECCIÓN: Centro de Orientación -->
+<section class="co-section">
+  <div class="container">
+
+    <div class="row text-center">
+      <div class="col-xs-12">
+        <h2 class="co-title">Centro de Orientación</h2>
+      </div>
+    </div>
+
+    <div class="row co-grid">
+      <!-- Card 1 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="#" class="co-card">
+          <div class="co-media">
+            <img class="img-responsive"
+                 src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=1600&auto=format&fit=crop"
+                 alt="Atención personalizada">
+          </div>
+          <div class="co-body">
+            <div class="co-head">
+              <h3 class="co-card-title">Atención personalizada</h3>
+              <span class="co-ico"><span class="glyphicon glyphicon-earphone"></span></span>
+            </div>
+            <p class="co-desc">En modalidad presencial y virtual.</p>
+            <span class="co-more">Ver más <span class="glyphicon glyphicon-arrow-right"></span></span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="#" class="co-card">
+          <div class="co-media">
+            <img class="img-responsive"
+                 src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1600&auto=format&fit=crop"
+                 alt="Biblioteca de la SMV">
+          </div>
+          <div class="co-body">
+            <div class="co-head">
+              <h3 class="co-card-title">Biblioteca de la SMV</h3>
+              <span class="co-ico"><span class="glyphicon glyphicon-home"></span></span>
+            </div>
+            <p class="co-desc">
+              Puerta de acceso a un vasto universo de conocimiento especializado en áreas
+              clave sobre el mercado de valores y otras.
+            </p>
+            <span class="co-more">Ver más <span class="glyphicon glyphicon-arrow-right"></span></span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-xs-12 col-sm-6 col-md-4">
+        <a href="#" class="co-card">
+          <div class="co-media">
+            <img class="img-responsive"
+                 src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?q=80&w=1600&auto=format&fit=crop"
+                 alt="Solicita charla">
+          </div>
+          <div class="co-body">
+            <div class="co-head">
+              <h3 class="co-card-title">Solicita charla</h3>
+              <span class="co-ico"><span class="glyphicon glyphicon-user"></span></span>
+            </div>
+            <p class="co-desc">Contáctanos para programar una charla informativa adaptada a tus necesidades.</p>
+            <span class="co-more">Ver más <span class="glyphicon glyphicon-arrow-right"></span></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: Centro de Orientación -->
+
+      </div>
+      <div id="seccion_9">
+        <!-- SECCIÓN: Cursos en línea -->
+<section class="ocn-section">
+  <div class="container">
+    <div class="ocn-wrapper">
+      <div class="row middle-xs">
+        <!-- Texto -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="ocn-copy">
+            <h2 class="ocn-title">
+              <span>CURSOS</span> EN LÍNEA
+            </h2>
+            <p class="ocn-desc">
+              Accede a contenidos educativos desde cualquier lugar y a tu propio ritmo.
+              Explora cursos virtuales interactivos diseñados para fortalecer tus conocimientos
+              sobre el mercado de valores.
+            </p>
+
+            <a href="#" class="btn ocn-cta btn-lg">
+              IR AHORA <span class="glyphicon glyphicon-arrow-right"></span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Collage de imágenes -->
+        <div class="col-xs-12 col-sm-6">
+          <div class="ocn-collage">
+            <img class="ocn-img ocn-img--top"
+                 src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop"
+                 alt="Aprendizaje en laptop">
+            <img class="ocn-img ocn-img--main"
+                 src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1600&auto=format&fit=crop"
+                 alt="Equipo estudiando en línea">
+            <img class="ocn-img ocn-img--bottom"
+                 src="https://images.unsplash.com/photo-1523580846011-85d3a5b25702?q=80&w=1400&auto=format&fit=crop"
+                 alt="Grupo aprendiendo con laptop">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /SECCIÓN: Cursos en línea -->
+
+      </div>
+    </div>
+    <footer id="footer-html">
+        <section>
+    <div class="contenedor">
+        <div class="contenedor_encabezado">
+            <img class="encabezado_logo" src="../assets/webp/smv_logo_blanco.webp" alt="Sede SMV">
+            <div class="encabezado_iconos_container">
+                <a href="https://www.facebook.com/smv.peru" target="_blank"><img src="../assets/svg/footer_logo_fb.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/smvperu/" target="_blank"><img src="../assets/svg/footer_logo_instagram.svg" alt="Instagram"></a>
+                <a href="https://www.linkedin.com/company/smvperu/" target="_blank"><img src="../assets/svg/footer_logo_linkedin.svg" alt="LinkedIn"></a>
+                <a href="https://www.youtube.com/@smvperuoficial" target="_blank"><img src="../assets/svg/footer_logo_yt.svg" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/@smvperu" target="_blank"><img src="../assets/svg/footer_logo_tiktok.svg" alt="TikTok"></a>
+            </div>
+        </div>
+        <div class="sub_contenedor">
+            <div class="sub_contenedor_columna">
+                <span class="sub_columna_encabezado">Sede Central</span>
+                <span class="sub_columna_elemento">Vía Expresa Luis Fernán Bedoya Reyes N° 3617, San Isidro, Lima (Ex Av. Paseo de la República)</span>
+                <span class="sub_columna_encabezado">Plataforma web SMV</span>
+                <span class="sub_columna_elemento">www.gob.pe/smv</span>
+                <span class="sub_columna_encabezado">Teléfono</span>
+                <span class="sub_columna_elemento">(01) 610 6300</span>
+            </div>
+            <div class="sub_contenedor_columna">
+                <span class="sub_columna_encabezado">Información de Interes</span>
+                <span class="sub_columna_elemento">Sostenibilidad Corporativa</span>
+                <span class="sub_columna_elemento">Formularios e-Prospectus</span>
+                <span class="sub_columna_elemento">Formato XBRL</span>
+                <span class="sub_columna_elemento">Información FATCA</span>
+                <span class="sub_columna_elemento">Diposiciones sobre Audiencias No Presenciales</span>
+            </div>
+            <div class="sub_contenedor_columna">
+                <span class="sub_columna_encabezado">Educación Financiera</span>
+                <span class="sub_columna_elemento">Folletos</span>
+                <span class="sub_columna_elemento">Infografías</span>
+                <span class="sub_columna_elemento">Cómics</span>
+                <span class="sub_columna_elemento">Guías</span>
+            </div>
+            <img class="sub_img_sede" src="../assets/webp/smv_sede.webp" alt="Sede SMV">
+        </div>
+    </div>
+</section>
+    </footer>
+    <script src="../js/index/seccion_1.js"></script>
+    <script src="../js/index/seccion_2.js"></script>
+    <script src="../js/index/seccion_3.js"></script>
+    <script src="../js/index/seccion_4.js"></script>
+    <script src="../js/index/seccion_5.js"></script>
+    <script src="../js/index/seccion_6.js"></script>
+    <script src="../js/index/seccion_7.js"></script>
+    <script src="../js/index/seccion_8.js"></script>
+    <script src="../js/index/seccion_9.js"></script>
+    <script src="../js/shared/header.js"></script>
+    <script src="../js/shared/footer.js"></script>
+    <script>
+(function () {
+  var btn = document.querySelector('.header_toggle');
+  var nav = document.getElementById('site-menu');
+  if (!btn || !nav) return;
+
+  function open(){ document.body.classList.add('menu-open'); btn.setAttribute('aria-expanded','true'); }
+  function close(){ document.body.classList.remove('menu-open'); btn.setAttribute('aria-expanded','false'); }
+  function toggle(){ (document.body.classList.contains('menu-open') ? close() : open()); }
+
+  btn.addEventListener('click', toggle);
+  document.addEventListener('click', function(e){ if(!document.querySelector('.header_container').contains(e.target)) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key==='Escape') close(); });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', close); });
+})();
+</script>
+  </body>
+</html>

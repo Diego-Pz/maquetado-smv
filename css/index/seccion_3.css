@@ -1,0 +1,114 @@
+/* Sección */
+.sp-lib {
+  padding: 40px 0 20px;
+  background: #fff;
+}
+
+/* Título */
+.sp-title {
+  margin: 0 0 26px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.sp-grid {
+    margin-top: 60px;
+}
+
+/* Grid: separaciones entre columnas en dispositivos pequeños */
+.sp-grid > [class*="col-"] {
+  margin-bottom: 18px;
+}
+
+/* Card */
+.sp-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #eef1f5;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding-top: 34px;            /* espacio para el badge flotante */
+  transition: box-shadow .18s ease, transform .18s ease;
+}
+.sp-card:hover,
+.sp-card:focus {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12);
+  outline: none;
+}
+
+/* Cuerpo */
+.sp-body {
+  padding: 18px 18px 22px;
+}
+.sp-card-title {
+  margin: 6px 0 8px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+}
+.sp-divider {
+  width: 80%;
+  height: 6px;
+  margin: 0 auto 10px;
+  border-bottom: 3px solid #1f2a37;
+  opacity: .12;                 /* línea tenue bajo el título */
+}
+.sp-desc {
+  margin: 0;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Badge diamante */
+.sp-badge {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 58px;
+  height: 58px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #2f6bd9, #21b07b);
+  box-shadow: 0 10px 18px rgba(16, 185, 129, .2);
+  z-index: 2;
+}
+.sp-badge:after {  /* segunda capa verde (como en la referencia) */
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border-radius: 10px;
+  background: #158f63;
+  opacity: .18;
+}
+
+/* Icono dentro del diamante (no rotado) */
+.sp-badge-inner {
+  position: absolute;
+  inset: 7px;
+  background: #fff;
+  border-radius: 10px;
+  transform: rotate(-45deg);  /* contrarrotación para enderezar el ícono */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center; -ms-flex-align: center; align-items: center;
+  -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
+  color: #0c5ed2;
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 767px){
+  .sp-title { font-size: 22px; }
+}
+@media (min-width: 768px){
+  .sp-title { font-size: 26px; }
+}
+@media (min-width: 992px){
+  .sp-title { font-size: 28px; }
+}

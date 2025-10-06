@@ -1,0 +1,25 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor_principal{
+    
+}
+
+.header__container{
+    background: linear-gradient(135deg, #2c63c9 0%, #1dbf89 100%);
+}
+
+#seccion_1{
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 44px 44px, 44px 44px;
+}

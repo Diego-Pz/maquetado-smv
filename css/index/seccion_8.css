@@ -1,0 +1,101 @@
+/* Sección */
+.co-section{
+  position: relative;
+  padding: 28px 0 36px;
+  background: #fff;
+}
+
+/* Decorado sutil de puntos en la esquina inferior izquierda */
+.co-section:after{
+  content:"";
+  position:absolute;
+  left:0; bottom:0;
+  width: 420px; height: 220px;
+  background:
+    radial-gradient(circle at 10px 10px, rgba(16,185,129,.28) 2px, transparent 2.5px) 0 0/22px 22px;
+  opacity:.35;
+  pointer-events:none;
+}
+
+/* Título */
+.co-title{
+  margin:0 0 16px;
+  color:#0f172a;
+  font-weight: 800;
+}
+
+/* Grid spacing */
+.co-grid > [class*="col-"]{ margin-bottom:18px; }
+
+/* Card */
+.co-card{
+  display:block;
+  color:#0f172a;
+  text-decoration:none;
+  border-radius:14px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #e9edf2;
+  box-shadow: 0 10px 22px rgba(15,23,42,.08);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.co-card:hover, .co-card:focus{
+  transform: translateY(-3px);
+  box-shadow: 0 16px 30px rgba(15,23,42,.12);
+  text-decoration:none;
+  outline:none;
+}
+
+/* Media */
+.co-media img{
+  width:100%;
+  height:175px;
+  object-fit:cover;
+  display:block;
+}
+
+/* Body */
+.co-body{ padding:12px 14px 14px; }
+.co-head{
+  display:flex; align-items:center; justify-content:space-between;
+}
+.co-card-title{
+  margin:0 10px 6px 0;
+  font-size:16px; font-weight:700; color:#0f172a;
+}
+
+/* Iconito a la derecha del título */
+.co-ico{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:26px; height:26px; border-radius:50%;
+  background:#f1f5f9; color:#1f2937; font-size:12px;
+}
+
+/* Descripción */
+.co-desc{
+  margin:0 0 10px;
+  color:#4b5563;
+  font-size:13px; line-height:1.6;
+}
+
+/* Footer link */
+.co-more{
+  display:inline-block;
+  color:#1f3ed6; font-weight:700; font-size:13px;
+}
+.co-card:hover .co-more .glyphicon{
+  transform: translateX(3px);
+}
+.co-more .glyphicon{ transition: transform .15s ease; }
+
+/* Responsive */
+@media (max-width: 767px){
+  .co-title{ font-size:22px; }
+  .co-media img{ height:180px; }
+}
+@media (min-width: 768px){
+  .co-title{ font-size:26px; }
+}
+@media (min-width: 992px){
+  .co-title{ font-size:30px; }
+}

@@ -1,0 +1,106 @@
+/* Contenedor de la sección con gradiente + cuadriculado sutil */
+.hero-smv {
+  position: relative;
+  padding: 40px 0 35px;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* malla sutil de fondo */
+.hero-smv:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+/* Títulos */
+.hero-smv__title {
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 14px;
+  font-size: 26px; /* mobile base */
+}
+.hero-smv__subtitle {
+  max-width: 860px;
+  margin: 0 auto 28px;
+  opacity: .9;
+  font-size: 14px;
+}
+
+/* Media (marco con bordes redondeados y “marco” blanco) */
+.hero-smv__media {
+  border-radius: 14px;
+  border: 0;
+  background: #fff;
+}
+.hero-smv__media-body {
+  position: relative;
+  height: 553px;
+  padding: 8px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+.hero-smv__media-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  filter: saturate(.85);
+}
+
+/* Botón play centrado */
+.hero-smv__play {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 999px;
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  text-align: center;
+  box-shadow: 0 8px 22px rgba(0,0,0,.25);
+}
+
+/* Cards */
+.hero-smv__cards {
+  margin-top: 18px;
+}
+.hero-smv__card {
+  border-radius: 12px;
+  border: 0;
+  padding: 18px 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.15);
+  background: #ffffff;
+}
+.hero-smv__card .caption { padding: 0; }
+.hero-smv__icon {
+  display: inline-block;
+  font-size: 36px;
+  color: #1b5f86; /* azul petróleo */
+  margin-bottom: 8px;
+}
+.hero-smv__card-text {
+  color: #2b3a40;
+  font-weight: 600;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* ====== Responsivo ====== */
+@media (min-width: 768px) {
+  .hero-smv { padding: 60px 0 40px; }
+  .hero-smv__title { font-size: 36px; }
+  .hero-smv__subtitle { font-size: 15px; }
+  .hero-smv__icon { font-size: 40px; }
+}
+@media (min-width: 992px) {
+  .hero-smv { padding: 70px 0 50px; }
+  .hero-smv__title { font-size: 44px; }
+  .hero-smv__subtitle { font-size: 16px; }
+  .hero-smv__icon { font-size: 44px; }
+}

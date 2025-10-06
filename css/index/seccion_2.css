@@ -1,0 +1,68 @@
+.kb-lib{
+    padding:40px 0 20px;
+    background:#fff;
+  }
+  .kb-title{
+    font-weight:700;
+    margin:0 0 22px;
+    color:#0f172a;
+  }
+  
+  /* separaciones del grid */
+  .kb-grid > [class*="col-"]{ margin-bottom:16px; }
+  
+  /* Card */
+  .kb-card{
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    padding:18px 14px;
+    min-height:150px;
+    border-radius:14px;
+    color:#1f2937;
+    background:
+      linear-gradient(#ffffff,#ffffff) padding-box,      /* fondo */
+      linear-gradient(140deg,#3b82f6,#22c55e) border-box;/* borde */
+    border:1px solid transparent;  /* necesario para el truco */
+    box-shadow:0 6px 18px rgba(15,23,42,.08);
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .kb-card:hover,
+  .kb-card:focus{
+    transform:translateY(-4px);
+    box-shadow:0 12px 28px rgba(15,23,42,.12);
+    outline:none;
+  }
+  
+  .kb-icon{
+    display:inline-block;
+    width:64px;height:64px;
+    line-height:64px;
+    margin-bottom:8px;
+    border-radius:50%;
+    background:linear-gradient(#fff,#fff) padding-box,
+               radial-gradient(circle at 30% 30%, #3b82f6, #22c55e) border-box;
+    border:1px solid transparent;
+    color:#1857d0; /* color de los glyphicons */
+    font-size:28px;
+  }
+  .kb-text{
+    display:block;
+    font-weight:600;
+    font-size:14px;
+    color:#2b3a40;
+  }
+  
+  /* Responsive */
+  @media (max-width: 767px){
+    .kb-title{ font-size:22px; }
+    .kb-card{ min-height:140px; }
+    .kb-icon{ width:56px;height:56px; line-height:56px; font-size:24px; }
+  }
+  @media (min-width: 768px){
+    .kb-title{ font-size:26px; }
+  }
+  @media (min-width: 992px){
+    .kb-title{ font-size:28px; }
+  }
+  
