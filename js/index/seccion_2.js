@@ -1,4 +1,10 @@
 // Con jQuery (ya presente en tu layout)
+
+/*
+ESTE SCRIPT PERMITE LA NAVEGACIÓN POR TECLADO EN LAS TARJETAS
+DE LA SECCIÓN 2 (SECCIÓN DE SERVICIOS O PRODUCTOS)
+*/
+
 $(function () {
   // Demo: foco con teclado en tarjetas
   $('.kb-card').attr('tabindex', '0');
